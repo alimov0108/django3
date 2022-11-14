@@ -6,3 +6,6 @@ class Noutbuk(models.Model):
     davlati = models.CharField(max_length=30)
     ishlasi = models.CharField(max_length=30)
 # Create your models here.
+
+    def __str__(self):
+        return f"{self.narxi} {self.davlati} {self.ishlasi}"
